@@ -27,6 +27,9 @@ public struct PXLView: View {
                 }
             }
     }
+    public init(viewID: String) {
+        self.viewID = viewID
+    }
 }
 
 public class PXLSessionObservable: ObservableObject {
