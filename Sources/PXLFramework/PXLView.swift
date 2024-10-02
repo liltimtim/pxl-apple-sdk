@@ -36,18 +36,18 @@ public class PXLSessionObservable: ObservableObject {
     @Published var ip: String = "getting ip"
     private var session: PXLSessionImpl
     
-    init(session: PXLSessionImpl = .init(configuration: .init(apiURL: ""))) {
+    public init(session: PXLSessionImpl = .init(configuration: .init(apiURL: ""))) {
         self.session = session
         Task { @MainActor in
             self.ip = await self.session.configuration.ip
         }
     }
     
-    func logOpen(viewID: String) async {
+    public func logOpen(viewID: String) async {
         await session.logEvent(pxlEvent: PXLViewEvent.viewOpen(viewID: viewID))
     }
     
-    func logClose(viewID: String) async {
+    public func logClose(viewID: String) async {
         await session.logEvent(pxlEvent: PXLViewEvent.viewClose(viewID: viewID))
     }
 }
