@@ -1,0 +1,15 @@
+{
+  "originHash" : "92b8e6e7e05374339da32c68d1a7670a2e6fbc6eefb7c3b99967e369a759e34e",
+  "pins" : [
+    {
+      "identity" : "porkchop-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/liltimtim/porkchop-ios.git",
+      "state" : {
+        "revision" : "4fb82a5dbb497e8f91e009fc5b8df96f1ccb9a91",
+        "version" : "3.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
