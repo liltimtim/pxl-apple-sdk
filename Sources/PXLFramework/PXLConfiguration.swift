@@ -20,7 +20,7 @@ public struct PXLConfiguration {
         }
     }
     
-    init(apiURL: String,
+    public init(apiURL: String,
          networkProvider: PRKChopNetworking = .init(),
          cache: UserDefaults = .init(suiteName: "com.pxl.framework") ?? .standard) {
         self.apiURL = URL(stringLiteral: apiURL)
